@@ -72,21 +72,19 @@ const Footer = () => (
     <StyledSocialLinks>
       <ul>
         {socialMedia &&
-            socialMedia.map(({ name, url }, i) => (
-              <li key={i}>
-                <a href={url} aria-label={name}>
-                  <Icon name={name} />
-                </a>
-              </li>
-            ))}
+          socialMedia.map(({ name, url }, i) => (
+            <li key={i}>
+              <a href={url} aria-label={name}>
+                <Icon name={name} />
+              </a>
+            </li>
+          ))}
       </ul>
     </StyledSocialLinks>
 
     <StyledCredit tabindex="-1">
-      <a href="https://github.com/deekshithaj">
-        <div>Designed by Brittany Chiang</div> <br />
-        <div>Revised by Deekshitha Juvvadi</div>
-      </a>
+      <div>Designed by Brittany Chiang</div> <br />
+      <div>Revised by Deekshitha Juvvadi</div>
     </StyledCredit>
   </StyledFooter>
 );
