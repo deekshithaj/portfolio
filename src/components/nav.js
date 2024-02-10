@@ -195,7 +195,7 @@ const Nav = ({ isHome }) => {
 
   const { siteUrl } = site.siteMetadata;
 
-  const resumeFileName = '/resume.pdf'; //filename of resume, change here - *required*
+  const resumeFileName = '/resume.pdf'; //filename of resume, change here - *required* next, update resume file in src/static folder
   const resumeAddress = `${siteUrl}${resumeFileName}`;
 
   const Logo = (
