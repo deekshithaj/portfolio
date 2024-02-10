@@ -233,11 +233,6 @@ const StyledProject = styled.li`
         height: 20px;
       }
     }
-
-    .cta {
-      ${({ theme }) => theme.mixins.smallButton};
-      margin: 10px;
-    }
   }
 
   .project-image {
@@ -321,8 +316,6 @@ const Featured = () => {
               }
               tech
               github
-              external
-              cta
             }
             html
           }
@@ -355,7 +348,7 @@ const Featured = () => {
         {featuredProjects &&
           featuredProjects.map(({ node }, i) => {
             const { frontmatter, html } = node;
-            const { external, title, tech, github, cover, cta } = frontmatter;
+            const { title, tech, github, cover } = frontmatter;
             const image = getImage(cover);
 
             return (
@@ -364,9 +357,7 @@ const Featured = () => {
                   <div>
                     <p className="project-overline">Featured Project</p>
 
-                    <h3 className="project-title">
-                      <a href={external}>{title}</a>
-                    </h3>
+                    <h3 className="project-title">{title}</h3>
 
                     <div
                       className="project-description"
@@ -382,19 +373,9 @@ const Featured = () => {
                     )}
 
                     <div className="project-links">
-                      {cta && (
-                        <a href={cta} aria-label="Course Link" className="cta">
-                          Learn More
-                        </a>
-                      )}
                       {github && (
                         <a href={github} aria-label="GitHub Link">
                           <Icon name="GitHub" />
-                        </a>
-                      )}
-                      {external && !cta && (
-                        <a href={external} aria-label="External Link" className="external">
-                          <Icon name="External" />
                         </a>
                       )}
                     </div>
@@ -402,7 +383,7 @@ const Featured = () => {
                 </div>
 
                 <div className="project-image">
-                  <a href={external ? external : github ? github : '#'}>
+                  <a href={github ? github : '#'}>
                     <GatsbyImage image={image} alt={title} className="img" />
                   </a>
                 </div>
