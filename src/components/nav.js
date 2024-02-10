@@ -196,7 +196,7 @@ const Nav = ({ isHome }) => {
   const { siteUrl } = site.siteMetadata;
 
   const resumeFileName = '/resume.pdf'; //filename of resume, change here - *required*
-  const resumeAddress = `${siteUrl}${  resumeFileName}`;
+  const resumeAddress = `${siteUrl}${resumeFileName}`;
 
   const Logo = (
     <div className="logo" tabIndex="-1">
