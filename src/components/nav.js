@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'gatsby';
+import { Link, useStaticQuery, graphql } from 'gatsby';
 import PropTypes from 'prop-types';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import styled, { css } from 'styled-components';
@@ -181,6 +181,23 @@ const Nav = ({ isHome }) => {
   const fadeClass = isHome ? 'fade' : '';
   const fadeDownClass = isHome ? 'fadedown' : '';
 
+  const { site } = useStaticQuery(
+    graphql`
+      query {
+        site {
+          siteMetadata {
+            siteUrl
+          }
+        }
+      }
+    `,
+  );
+
+  const { siteUrl } = site.siteMetadata;
+
+  const resumeFileName = '/resume.pdf'; //filename of resume, change here - *required*
+  const resumeAddress = `${siteUrl}${  resumeFileName}`;
+
   const Logo = (
     <div className="logo" tabIndex="-1">
       {isHome ? (
@@ -208,7 +225,7 @@ const Nav = ({ isHome }) => {
   const ResumeLink = (
     <a
       className="resume-button"
-      href="../DeekshithaJuvvadi_Resume_v.pdf"
+      href={`${resumeAddress}`}
       target="_blank"
       rel="noopener noreferrer">
       Resume
