@@ -4,7 +4,7 @@ module.exports = {
   siteMetadata: {
     title: 'Deekshitha Juvvadi',
     description: 'Personal website of Deekshitha Juvvadi, a software engineer',
-    siteUrl: 'https://www.netlify.com', // No trailing slash allowed!
+    siteUrl: 'https://deekshithajuvvadi.netlify.app', // No trailing slash allowed!
     image: '/og-screen.png', // Path to your image you placed in the 'static' folder
     twitterUsername: '@deekshithaj25',
   },
