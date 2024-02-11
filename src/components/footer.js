@@ -84,7 +84,7 @@ const Footer = () => (
 
     <StyledCredit tabindex="-1">
       <div>Designed by Brittany Chiang</div> <br />
-      <div>Revised by Deekshitha Juvvadi</div>
+      <div>Developed by Deekshitha Juvvadi</div>
     </StyledCredit>
   </StyledFooter>
 );
