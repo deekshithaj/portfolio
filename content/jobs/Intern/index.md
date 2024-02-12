@@ -1,5 +1,5 @@
 ---
-date: '2023-09-03'
+date: '2023-09-02'
 title: 'Intern'
 company: 'Qualcomm'
 location: 'Hyderabad, India'
