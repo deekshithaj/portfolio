@@ -3,7 +3,7 @@ date: '2023-09-03'
 title: 'Software Developer'
 company: 'Qualcomm'
 location: 'Hyderabad, India'
-range: 'Apr 2021 - Aug 2022'
+range: 'April 2021 - August 2022'
 url: 'https://www.qualcomm.com/'
 ---
 
