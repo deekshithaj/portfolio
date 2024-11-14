@@ -1,7 +1,7 @@
 ---
 date: '2'
 title: 'Sniff Quest'
-cover: './SniffQuest.png'
+cover: './sniff_quest.png'
 github: 'https://github.com/deekshithaj/SniffQuest'
 tech:
   - Python

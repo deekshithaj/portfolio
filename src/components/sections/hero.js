@@ -66,11 +66,12 @@ const Hero = () => {
     <>
       <p>
         {' '}
-        I'm a full stack developer based in Richardson, Texas pursuing my Master's degree at &nbsp;
+        I'm a full stack developer based in Little Elm, Texas. I've completed my Master's degree at
+        &nbsp;
         <a href="https://www.utdallas.edu/" target="_blank" rel="noreferrer">
           The University of Texas at Dallas
         </a>
-        , passionate about learning and constantly improving myself.
+        and am passionate about learning and constantly improving myself.
       </p>
     </>
   );
